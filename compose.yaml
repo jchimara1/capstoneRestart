@@ -1,0 +1,11 @@
+services:
+  postgres-db:
+    container_name: capstone_chimara
+    image: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: justice
+      POSTGRES_PASSWORD: chimara
+      POSTGRES_DB: capstone
+    ports:
+      - "5432:5432"
